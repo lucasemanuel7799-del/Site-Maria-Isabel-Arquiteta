@@ -5,15 +5,15 @@ const projects = [
         title: "Loja De bem Com a Vida",
         category: "Comercial",
         bentoClass: "md:col-span-2 md:row-span-1",
-        coverImage: "assets/projetos/loja-de-bem-com-a-vida/01.jpg", // Capa escolhida
+        coverImage: "assets/projetos/loja-de-bem-com-a-vida/01_resultado.webp", // Capa escolhida
         images: [
-            "assets/projetos/loja-de-bem-com-a-vida/01.jpg", 
-            "assets/projetos/loja-de-bem-com-a-vida/02.jpg",
-            "assets/projetos/loja-de-bem-com-a-vida/03.jpg",
-            "assets/projetos/loja-de-bem-com-a-vida/04.jpg",
-            "assets/projetos/loja-de-bem-com-a-vida/05.jpg",
-            "assets/projetos/loja-de-bem-com-a-vida/06.jpg",
-            "assets/projetos/loja-de-bem-com-a-vida/07.jpg"
+            "assets/projetos/loja-de-bem-com-a-vida/01_resultado.webp", 
+            "assets/projetos/loja-de-bem-com-a-vida/02_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/03_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/04_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/05_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/06_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/07_resultado.webp"
         ]
     },
     {
@@ -22,49 +22,49 @@ const projects = [
         category: "Interiores",
         bentoClass: "md:col-span-1 md:row-span-2",
         // Define a capa independente da ordem do modal
-        coverImage: "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/05.jpg", 
+        coverImage: "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/05_resultado.webp", 
         // A ORDEM AQUI IMPORTA: O carrossel vai seguir essa ordem
         images: {
             "Hall": [
-                "assets/projetos/malu-e-marcelo/hall/01.jpg",
+                "assets/projetos/malu-e-marcelo/hall/01_resultado.webp",
             ],
             "Lavabo": [
-                "assets/projetos/malu-e-marcelo/lavabo/01.jpg", 
-                "assets/projetos/malu-e-marcelo/lavabo/02.jpg",
-                "assets/projetos/malu-e-marcelo/lavabo/03.jpg"
+                "assets/projetos/malu-e-marcelo/lavabo/01_resultado.webp", 
+                "assets/projetos/malu-e-marcelo/lavabo/02_resultado.webp",
+                "assets/projetos/malu-e-marcelo/lavabo/03_resultado.webp"
             ],
             "Sala Estar/Jantar": [
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/05.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/01.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/02.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/03.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/04.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/06.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/07.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/08.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/09.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/10.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/11.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/12.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/13.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/14.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/15.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/16.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/17.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/18.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/19.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/20.jpg"
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/05_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/01_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/02_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/03_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/04_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/06_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/07_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/08_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/09_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/10_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/11_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/12_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/13_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/14_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/15_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/16_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/17_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/18_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/19_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/20_resultado.webp"
             ],
             "Sala de TV": [
-                "assets/projetos/malu-e-marcelo/sala-de-tv/01.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/02.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/03.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/04.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/05.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/06.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/07.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/08.jpg",
-                "assets/projetos/malu-e-marcelo/sala-de-tv/09.jpg",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/01_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/02_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/03_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/04_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/05_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/06_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/07_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/08_resultado.webp",
+                "assets/projetos/malu-e-marcelo/sala-de-tv/09_resultado.webp",
             ]
         }
     },
@@ -73,14 +73,14 @@ const projects = [
         title: "Cozinha",
         category: "Interiores",
         bentoClass: "md:col-span-1 md:row-span-2", 
-        coverImage: "assets/projetos/cozinha-gourmet/01.jpg", // Capa escolhida
+        coverImage: "assets/projetos/cozinha-gourmet/01_resultado.webp", // Capa escolhida
         images: [
-            "assets/projetos/cozinha-gourmet/01.jpg",
-            "assets/projetos/cozinha-gourmet/02.jpg",
-            "assets/projetos/cozinha-gourmet/03.jpg",
-            "assets/projetos/cozinha-gourmet/04.jpg",
-            "assets/projetos/cozinha-gourmet/05.jpg",
-            "assets/projetos/cozinha-gourmet/06.jpg"
+            "assets/projetos/cozinha-gourmet/01_resultado.webp",
+            "assets/projetos/cozinha-gourmet/02_resultado.webp",
+            "assets/projetos/cozinha-gourmet/03_resultado.webp",
+            "assets/projetos/cozinha-gourmet/04_resultado.webp",
+            "assets/projetos/cozinha-gourmet/05_resultado.webp",
+            "assets/projetos/cozinha-gourmet/06_resultado.webp"
         ]
     },
     {
@@ -88,14 +88,14 @@ const projects = [
         title: "Quarto Casal",
         category: "Interiores",
         bentoClass: "md:col-span-2 md:row-span-1", 
-        coverImage: "assets/projetos/quarto-ana-maria/01.jpg", // Capa escolhida
+        coverImage: "assets/projetos/quarto-ana-maria/01_resultado.webp", // Capa escolhida
         images: [
-            "assets/projetos/quarto-ana-maria/01.jpg",
-            "assets/projetos/quarto-ana-maria/02.jpg",
-            "assets/projetos/quarto-ana-maria/03.jpg",
-            "assets/projetos/quarto-ana-maria/04.jpg",
-            "assets/projetos/quarto-ana-maria/05.jpg",
-            "assets/projetos/quarto-ana-maria/06.jpg",
+            "assets/projetos/quarto-ana-maria/01_resultado.webp",
+            "assets/projetos/quarto-ana-maria/02_resultado.webp",
+            "assets/projetos/quarto-ana-maria/03_resultado.webp",
+            "assets/projetos/quarto-ana-maria/04_resultado.webp",
+            "assets/projetos/quarto-ana-maria/05_resultado.webp",
+            "assets/projetos/quarto-ana-maria/06_resultado.webp",
         ]
     },
     {
@@ -103,12 +103,12 @@ const projects = [
         title: "Varanda Gourmet",
         category: "Residencial",
         bentoClass: "md:col-span-1 md:row-span-2", 
-        coverImage: "assets/projetos/varanda-ingrid-e-kadu/01.jpg", // Capa escolhida
+        coverImage: "assets/projetos/varanda-ingrid-e-kadu/01_resultado.webp", // Capa escolhida
         images: [
-            "assets/projetos/varanda-ingrid-e-kadu/01.jpg",
-            "assets/projetos/varanda-ingrid-e-kadu/02.jpg",
-            "assets/projetos/varanda-ingrid-e-kadu/03.jpg",
-            "assets/projetos/varanda-ingrid-e-kadu/04.jpg",
+            "assets/projetos/varanda-ingrid-e-kadu/01_resultado.webp",
+            "assets/projetos/varanda-ingrid-e-kadu/02_resultado.webp",
+            "assets/projetos/varanda-ingrid-e-kadu/03_resultado.webp",
+            "assets/projetos/varanda-ingrid-e-kadu/04_resultado.webp",
         ]
     },
     {
@@ -116,15 +116,15 @@ const projects = [
         title: "Escritório Industrial",
         category: "Comercial",
         bentoClass: "md:col-span-2 md:row-span-1", 
-        coverImage: "assets/projetos/escritorio-industrial/01.jpg", // Capa escolhida
+        coverImage: "assets/projetos/escritorio-industrial/01_resultado.webp", // Capa escolhida
         images: [
-            "assets/projetos/escritorio-industrial/01.jpg",
-            "assets/projetos/escritorio-industrial/02.jpg",
-            "assets/projetos/escritorio-industrial/03.jpg",
-            "assets/projetos/escritorio-industrial/04.jpg",
-            "assets/projetos/escritorio-industrial/05.jpg",
-            "assets/projetos/escritorio-industrial/06.jpg",
-            "assets/projetos/escritorio-industrial/07.jpg"
+            "assets/projetos/escritorio-industrial/01_resultado.webp",
+            "assets/projetos/escritorio-industrial/02_resultado.webp",
+            "assets/projetos/escritorio-industrial/03_resultado.webp",
+            "assets/projetos/escritorio-industrial/04_resultado.webp",
+            "assets/projetos/escritorio-industrial/05_resultado.webp",
+            "assets/projetos/escritorio-industrial/06_resultado.webp",
+            "assets/projetos/escritorio-industrial/07_resultado.webp"
         ]
     },
     {
@@ -132,17 +132,17 @@ const projects = [
         title: "Quarto Infantil",
         category: "Residencial",
         bentoClass: "md:col-span-1 md:row-span-2", 
-        coverImage: "assets/projetos/quarto-pedro/01.jpg", // Capa escolhida
+        coverImage: "assets/projetos/quarto-pedro/01_resultado.webp", // Capa escolhida
         images: [
-            "assets/projetos/quarto-pedro/01.jpg",
-            "assets/projetos/quarto-pedro/02.jpg",
-            "assets/projetos/quarto-pedro/03.jpg",
-            "assets/projetos/quarto-pedro/04.jpg",
-            "assets/projetos/quarto-pedro/05.jpg",
-            "assets/projetos/quarto-pedro/06.jpg",
-            "assets/projetos/quarto-pedro/07.jpg",
-            "assets/projetos/quarto-pedro/08.jpg",
-            "assets/projetos/quarto-pedro/09.jpg",
+            "assets/projetos/quarto-pedro/01_resultado.webp",
+            "assets/projetos/quarto-pedro/02_resultado.webp",
+            "assets/projetos/quarto-pedro/03_resultado.webp",
+            "assets/projetos/quarto-pedro/04_resultado.webp",
+            "assets/projetos/quarto-pedro/05_resultado.webp",
+            "assets/projetos/quarto-pedro/06_resultado.webp",
+            "assets/projetos/quarto-pedro/07_resultado.webp",
+            "assets/projetos/quarto-pedro/08_resultado.webp",
+            "assets/projetos/quarto-pedro/09_resultado.webp",
         ]
     },
     {
@@ -150,25 +150,25 @@ const projects = [
         title: "Mari & Jd",
         category: "Residencial",
         bentoClass: "md:col-span-2 md:row-span-1", 
-        coverImage: "assets/projetos/mari-e-jd/cozinha/02.jpg", // Capa escolhida
+        coverImage: "assets/projetos/mari-e-jd/cozinha/02_resultado.webp", // Capa escolhida
         images: {
             "Sala": [
-                "assets/projetos/mari-e-jd/sala/01.jpg",
-                "assets/projetos/mari-e-jd/sala/02.jpg"
+                "assets/projetos/mari-e-jd/sala/01_resultado.webp",
+                "assets/projetos/mari-e-jd/sala/02_resultado.webp"
             ],
             "Cozinha": [
-                "assets/projetos/mari-e-jd/cozinha/01.jpg", 
-                "assets/projetos/mari-e-jd/cozinha/02.jpg",
-                "assets/projetos/mari-e-jd/cozinha/03.jpg"
+                "assets/projetos/mari-e-jd/cozinha/01_resultado.webp", 
+                "assets/projetos/mari-e-jd/cozinha/02_resultado.webp",
+                "assets/projetos/mari-e-jd/cozinha/03_resultado.webp"
             ],
             "Escritório": [
-                "assets/projetos/mari-e-jd/escritorio/01.jpg",
-                "assets/projetos/mari-e-jd/escritorio/02.jpg"
+                "assets/projetos/mari-e-jd/escritorio/01_resultado.webp",
+                "assets/projetos/mari-e-jd/escritorio/02_resultado.webp"
             ],
             "Suíte": [
-                "assets/projetos/mari-e-jd/suite/01.jpg",
-                "assets/projetos/mari-e-jd/suite/02.jpg",
-                "assets/projetos/mari-e-jd/suite/03.jpg"
+                "assets/projetos/mari-e-jd/suite/01_resultado.webp",
+                "assets/projetos/mari-e-jd/suite/02_resultado.webp",
+                "assets/projetos/mari-e-jd/suite/03_resultado.webp"
             ]
         }
     }
