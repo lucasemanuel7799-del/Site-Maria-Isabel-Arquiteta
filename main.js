@@ -13,7 +13,10 @@ const projects = [
             "assets/projetos/loja-de-bem-com-a-vida/04_resultado.webp",
             "assets/projetos/loja-de-bem-com-a-vida/05_resultado.webp",
             "assets/projetos/loja-de-bem-com-a-vida/06_resultado.webp",
-            "assets/projetos/loja-de-bem-com-a-vida/07_resultado.webp"
+            "assets/projetos/loja-de-bem-com-a-vida/07_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/08_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/09_resultado.webp",
+            "assets/projetos/loja-de-bem-com-a-vida/10_resultado.webp"
         ]
     },
     {
