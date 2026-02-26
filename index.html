@@ -9,14 +9,12 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style type="text/tailwindcss">
         @theme {
             --font-sans: 'Inter', sans-serif;
-            --font-serif: 'Playfair Display', serif;
         }
-        /* Esconde a barra de rolagem nativa no modal mas mantém a funcionalidade */
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
@@ -24,7 +22,6 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-        /* Animação suave para os cards ao filtrar */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -34,18 +31,17 @@
         }
     </style>
 </head>
-<body class="bg-zinc-50 text-zinc-900 font-sans antialiased selection:bg-zinc-900 selection:text-white relative">
+<body class="bg-zinc-50 text-zinc-900 font-sans font-light antialiased selection:bg-zinc-900 selection:text-white relative">
 
-    <header class="fixed w-full top-0 z-50 bg-zinc-50/80 backdrop-blur-md border-b border-zinc-200 transition-all duration-300">
+    <header class="absolute w-full top-0 z-50 bg-transparent transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
             <a href="#" class="text-xl md:text-2xl font-sans font-light tracking-[0.15em] text-zinc-900 uppercase">
                 M. Isabel Miranda
             </a>
             
-            <nav class="hidden md:flex gap-10 text-sm uppercase tracking-widest text-zinc-600 font-medium">
+            <nav class="hidden md:flex gap-10 text-sm uppercase tracking-[0.15em] text-zinc-600 font-light hover:text-zinc-900">
                 <a href="#home" class="hover:text-zinc-900 transition-colors">Home</a>
                 <a href="#projetos" class="hover:text-zinc-900 transition-colors">Projetos</a>
-                <a href="#sobre" class="hover:text-zinc-900 transition-colors">Sobre</a>
                 <a href="#contato" class="hover:text-zinc-900 transition-colors">Contato</a>
             </nav>
             
@@ -56,119 +52,129 @@
             </button>
         </div>
 
-        <nav id="mobile-nav" class="hidden fixed inset-0 bg-zinc-50 z-50 flex-col items-center justify-center gap-8 text-lg uppercase tracking-widest text-zinc-600 font-light">
+        <nav id="mobile-nav" class="hidden fixed inset-0 bg-zinc-50 z-50 flex-col items-center justify-center gap-8 text-lg uppercase tracking-[0.15em] text-zinc-600 font-light">
             <a href="#home" class="mobile-link hover:text-zinc-900 transition-colors">Home</a>
             <a href="#projetos" class="mobile-link hover:text-zinc-900 transition-colors">Projetos</a>
-            <a href="#sobre" class="mobile-link hover:text-zinc-900 transition-colors">Sobre</a>
             <a href="#contato" class="mobile-link hover:text-zinc-900 transition-colors">Contato</a>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-                     alt="Projeto de Arquitetura Contemporânea" 
-                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-zinc-900/50"></div>
-            </div>
+        <section id="home" class="relative w-full bg-transparent">
+            
+            <div class="hidden md:flex relative h-screen items-center justify-end overflow-hidden px-12 lg:px-24">
+                <div class="absolute inset-0 z-0">
+                    <img src="assets/svg/hero_dektop.svg" 
+                         alt="Maria Isabel Arquiteta" 
+                         class="w-full h-full object-cover object-center">
+                </div>
 
-            <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
-                <span class="block text-zinc-200 uppercase tracking-[0.3em] text-sm mb-6 font-light">Arquitetura & Interiores</span>
-                <h1 class="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight">
-                    Transformando espaços em <i class="font-light">experiências</i>
-                </h1>
-                <p class="text-lg md:text-xl text-zinc-200 mb-12 font-light max-w-2xl mx-auto">
-                    Projetos residenciais e comerciais com foco em funcionalidade, estética atemporal e bem-estar.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="https://wa.me/5511999999999" target="_blank" class="px-10 py-4 bg-white text-zinc-900 font-medium uppercase tracking-widest text-sm hover:bg-zinc-200 transition-colors w-full sm:w-auto">
+                <div class="relative z-10 max-w-xl w-full flex flex-col justify-center items-start text-left mt-20">
+                    <h1 class="text-3xl lg:text-4xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-[1.4] mb-8">
+                        Arquitetura que traduz identidade e permanece no tempo
+                    </h1>
+                    
+                    <p class="text-sm lg:text-base font-sans font-light uppercase tracking-widest text-zinc-900 leading-[1.8] mb-6">
+                        Formada em Arquitetura pela Universidade de Fortaleza, Maria Isabel construiu uma trajetória marcada por sensibilidade estética e precisão técnica.
+                    </p>
+                    
+                    <p class="text-sm lg:text-base font-sans font-light uppercase tracking-widest text-zinc-900 leading-[1.8] mb-10">
+                        Com olhar apurado e abordagem contemporânea, desenvolve projetos residenciais, comerciais e corporativos que traduzem sofisticação, identidade e intenção.
+                    </p>
+                    
+                    <a href="https://wa.me/5511999999999" target="_blank" class="px-10 py-4 border border-zinc-900 text-zinc-900 font-sans font-light uppercase tracking-[0.15em] text-xs hover:bg-zinc-900 hover:text-white transition-colors">
                         Fale com a Arquiteta
-                    </a>
-                    <a href="#projetos" class="px-10 py-4 border border-white text-white font-medium uppercase tracking-widest text-sm hover:bg-white hover:text-zinc-900 transition-colors w-full sm:w-auto">
-                        Explorar Projetos
                     </a>
                 </div>
             </div>
+
+            <div class="flex md:hidden relative min-h-[100dvh] w-full flex-col pt-24 pb-10 bg-transparent">
+                <div class="absolute inset-0 z-0">
+                    <img src="assets/svg/hero_mobile.svg" 
+                         alt="Maria Isabel Arquiteta" 
+                         class="w-full h-full object-cover object-bottom">
+                </div>
+                <div class="relative z-10 px-6 max-w-[371px] mx-auto w-full flex-1 flex flex-col justify-start mt-8">
+                    <h1 class="text-[20px] font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-[1.5] mb-8">
+                        Arquitetura que traduz identidade e permanece no tempo
+                    </h1>
+                    <p class="text-[13px] font-sans font-light uppercase tracking-[0.1em] text-zinc-900 leading-[1.8] mb-6">
+                        Formada em Arquitetura pela Universidade de Fortaleza, Maria Isabel construiu uma trajetória marcada por sensibilidade estética e precisão técnica.
+                    </p>
+                    <p class="text-[13px] font-sans font-light uppercase tracking-[0.1em] text-zinc-900 leading-[1.8]">
+                        Com olhar apurado e abordagem contemporânea, desenvolve projetos residenciais, comerciais e corporativos que traduzem sofisticação, identidade e intenção.
+                    </p>
+                </div>
+            </div>
+            
         </section>
 
-        <section id="projetos" class="pt-24 pb-12 bg-white">
+        <section id="sub_hero" class="relative w-full bg-transparent">
+            
+            <div class="hidden md:flex relative h-screen items-center justify-end overflow-hidden px-12 lg:px-24">
+                <div class="absolute inset-0 z-0">
+                    <img src="assets/svg/sub_hero_dektop.svg" 
+                         alt="Maria Isabel Arquiteta" 
+                         class="w-full h-full object-cover object-center">
+                </div>
+                
+                <div class="relative z-10 max-w-xl w-full flex flex-col justify-center items-start text-left">
+                    <p class="text-lg lg:text-xl font-sans font-light uppercase tracking-widest text-zinc-900 leading-[1.8] mb-8">
+                        À frente de seu escritório, conduz cada criação com equilíbrio entre forma e função, transformando espaços em experiências.
+                    </p>
+                    <p class="text-lg lg:text-xl font-sans font-light uppercase tracking-widest text-zinc-900 leading-[1.8]">
+                        Para Maria Isabel, arquitetura é expressão, estratégia e permanência — é a arte de criar ambientes que elevam a maneira de viver.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex md:hidden relative min-h-[100dvh] w-full flex-col pt-24 pb-10 bg-transparent">
+                <div class="absolute inset-0 z-0">
+                    <img src="assets/svg/sub_hero.svg" 
+                         alt="Maria Isabel Arquiteta" 
+                         class="w-full h-full object-cover object-bottom">
+                </div>
+                
+                <div class="relative z-10 px-6 max-w-[371px] mx-auto w-full flex-1 flex flex-col justify-start mt-8">
+                    <p class="text-[14px] font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-[1.8] mb-8">
+                        À frente de seu escritório, conduz cada criação com equilíbrio entre forma e função, transformando espaços em experiências.
+                    </p>
+                    <p class="text-[14px] font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-[1.8]">
+                        Para Maria Isabel, arquitetura é expressão, estratégia e permanência — é a arte de criar ambientes que elevam a maneira de viver.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projetos" class="pt-24 pb-12 bg-zinc-50">
             <div class="max-w-7xl mx-auto px-6">
                 
                 <div class="mb-16 text-center">
-                    <span class="text-zinc-500 uppercase tracking-[0.2em] text-xs font-semibold mb-4 block">Portfólio</span>
-                    <h2 class="text-4xl md:text-5xl font-sans font-light text-zinc-900 leading-tight tracking-wide mb-10">
+                    <span class="text-zinc-400 uppercase tracking-[0.2em] text-xs font-light mb-4 block">Portfólio</span>
+                    <h2 class="text-3xl md:text-4xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-tight mb-10">
                         Projetos Selecionados
                     </h2>
 
-                    <div id="project-filters" class="flex flex-wrap justify-center gap-4 md:gap-8 text-sm uppercase tracking-widest font-medium">
-                        <button class="filter-btn active border-b-2 border-zinc-900 text-zinc-900 pb-1 transition-all" data-filter="todos">Todos</button>
-                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b-2 border-transparent transition-all" data-filter="Residencial">Residencial</button>
-                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b-2 border-transparent transition-all" data-filter="Interiores">Interiores</button>
-                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b-2 border-transparent transition-all" data-filter="Comercial">Comercial</button>
+                    <div id="project-filters" class="flex flex-wrap justify-center gap-4 md:gap-8 text-xs uppercase tracking-widest font-light">
+                        <button class="filter-btn active border-b border-zinc-900 text-zinc-900 pb-1 transition-all" data-filter="todos">Todos</button>
+                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Residencial">Residencial</button>
+                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Interiores">Interiores</button>
+                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Comercial">Comercial</button>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-4 auto-rows-[300px] md:auto-rows-[280px] gap-3 w-full" id="portfolio-grid">
                     </div>
 
-                <div class="mt-20 text-center bg-zinc-50 p-12 border border-zinc-100">
-                    <h3 class="text-2xl md:text-3xl font-sans font-light text-zinc-900 tracking-wide mb-4">Pronto para transformar seu espaço?</h3>
-                    <p class="text-zinc-600 font-light mb-8 max-w-xl mx-auto">Vamos conversar sobre as suas ideias e entender como podemos criar um projeto único para você.</p>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="inline-block px-10 py-4 bg-zinc-900 text-white font-medium uppercase tracking-widest text-sm hover:bg-zinc-800 transition-colors">
+                <div class="mt-20 text-center bg-transparent py-12 border-t border-zinc-200">
+                    <h3 class="text-xl md:text-2xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 mb-4">Pronto para transformar seu espaço?</h3>
+                    <p class="text-zinc-500 font-light tracking-wide mb-8 max-w-xl mx-auto text-sm">Vamos conversar sobre as suas ideias e entender como podemos criar um projeto único para você.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="inline-block px-10 py-4 border border-zinc-900 text-zinc-900 font-light uppercase tracking-[0.15em] text-xs hover:bg-zinc-900 hover:text-white transition-colors">
                         Solicitar Orçamento
                     </a>
                 </div>
 
-            </div>
-        </section>
-
-        <section id="sobre" class="min-h-screen flex items-center py-24 bg-zinc-50">
-            <div class="max-w-7xl mx-auto px-6 w-full">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    
-                    <div class="relative">
-                        <div class="aspect-[3/4] w-full max-w-md mx-auto md:ml-0 overflow-hidden bg-zinc-200 relative profile-slideshow-container group">
-                            <img src="assets/fotos-pessoais/01.jpg" 
-                                 alt="Maria Isabel Miranda" 
-                                 class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-100 profile-slide">
-                            <img src="assets/fotos-pessoais/02.jpg" 
-                                 alt="Maria Isabel Miranda Trabalhando" 
-                                 class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-0 profile-slide">
-                            <img src="assets/fotos-pessoais/03.jpg" 
-                                 alt="Maria Isabel Miranda em Obra" 
-                                 class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-0 profile-slide">
-                        </div>
-                        <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-zinc-200 -z-10 hidden md:block"></div>
-                    </div>
-
-                    <div>
-                        <span class="text-zinc-500 uppercase tracking-[0.2em] text-xs font-semibold mb-4 block">A Arquiteta</span>
-                        <h2 class="text-4xl md:text-5xl font-sans font-light tracking-wide text-zinc-900 mb-8">
-                            Maria Isabel Miranda
-                        </h2>
-                        <div class="space-y-6 text-zinc-600 font-light leading-relaxed text-lg">
-                            <p>
-                                Com mais de uma década de experiência no mercado de arquitetura de alto padrão, minha missão é traduzir a identidade e os desejos de cada cliente em espaços tangíveis, funcionais e esteticamente impecáveis.
-                            </p>
-                            <p>
-                                Acredito que a verdadeira sofisticação reside na simplicidade bem executada. Cada projeto é um mergulho profundo nas necessidades de quem vai habitar o espaço, combinando luz natural, texturas autênticas e um design atemporal que sobrevive às tendências passageiras.
-                            </p>
-                        </div>
-                        
-                        <div class="mt-12 flex flex-col sm:flex-row items-center sm:items-end gap-8">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Signature_of_John_Hancock.svg/1200px-Signature_of_John_Hancock.svg.png" 
-                                 alt="Assinatura" 
-                                 class="h-12 opacity-60 mix-blend-multiply">
-                            
-                            <a href="https://wa.me/5511999999999" target="_blank" class="px-8 py-3 border-b-2 border-zinc-900 text-zinc-900 font-medium uppercase tracking-widest text-xs hover:text-zinc-500 hover:border-zinc-500 transition-colors">
-                                Agendar Consultoria
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </section>
     </main>
@@ -178,22 +184,22 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16">
                 
                 <div>
-                    <h3 class="text-xl font-sans font-light tracking-[0.15em] uppercase text-white mb-6">M. Isabel Miranda</h3>
-                    <p class="font-light text-sm leading-relaxed max-w-xs">
-                        Criando espaços que inspiram e transformam o viver. Arquitetura atemporal com foco em você.
+                    <h3 class="text-lg font-sans font-light tracking-[0.2em] uppercase text-white mb-6">M. Isabel Miranda</h3>
+                    <p class="font-light tracking-wider text-xs leading-relaxed max-w-xs">
+                        CRIANDO ESPAÇOS QUE INSPIRAM E TRANSFORMAM O VIVER. ARQUITETURA ATEMPORAL COM FOCO EM VOCÊ.
                     </p>
                 </div>
 
                 <div>
-                    <h4 class="text-white uppercase tracking-widest text-xs font-semibold mb-6">Contato</h4>
-                    <ul class="space-y-4 font-light text-sm">
+                    <h4 class="text-white uppercase tracking-[0.2em] text-xs font-light mb-6">Contato</h4>
+                    <ul class="space-y-4 font-light tracking-wider text-xs uppercase">
                         <li>
                             <a href="mailto:contato@mariaisabel.arq.br" class="hover:text-white transition-colors">contato@mariaisabel.arq.br</a>
                         </li>
                         <li>
                             <a href="https://wa.me/5511999999999" target="_blank" class="hover:text-white transition-colors">+55 (11) 99999-9999</a>
                         </li>
-                        <li class="pt-2">
+                        <li class="pt-2 leading-relaxed">
                             Av. Paulista, 1500 - Conj. 42<br>
                             São Paulo, SP - Brasil
                         </li>
@@ -201,8 +207,8 @@
                 </div>
 
                 <div>
-                    <h4 class="text-white uppercase tracking-widest text-xs font-semibold mb-6">Social</h4>
-                    <ul class="space-y-4 font-light text-sm">
+                    <h4 class="text-white uppercase tracking-[0.2em] text-xs font-light mb-6">Social</h4>
+                    <ul class="space-y-4 font-light tracking-wider text-xs uppercase">
                         <li>
                             <a href="#" class="hover:text-white transition-colors">Instagram</a>
                         </li>
@@ -217,7 +223,7 @@
 
             </div>
 
-            <div class="pt-8 border-t border-zinc-800 flex flex-col md:flex-row items-center justify-between text-xs font-light">
+            <div class="pt-8 border-t border-zinc-800 flex flex-col md:flex-row items-center justify-between text-[10px] uppercase tracking-widest font-light">
                 <p>&copy; 2026 Maria Isabel Miranda Arquitetura. Todos os direitos reservados.</p>
                 <p class="mt-4 md:mt-0">Design por Lucas Emanuel</p>
             </div>
@@ -231,9 +237,9 @@
             </svg>
         </button>
 
-        <div class="text-center mb-6 z-10">
-            <h3 id="modal-title" class="text-3xl md:text-4xl font-sans font-light tracking-wide text-white">Nome do Projeto</h3>
-            <p id="modal-category" class="text-zinc-400 uppercase tracking-widest text-xs mt-2 mb-6">Categoria</p>
+        <div class="text-center mb-6 z-10 mt-8">
+            <h3 id="modal-title" class="text-2xl md:text-3xl font-sans font-light tracking-[0.15em] uppercase text-white">Nome do Projeto</h3>
+            <p id="modal-category" class="text-zinc-400 uppercase tracking-[0.2em] text-[10px] mt-3 mb-6">Categoria</p>
             
             <div id="modal-tabs" class="flex justify-center gap-6 flex-wrap px-6"></div>
         </div>
@@ -246,7 +252,7 @@
                 </svg>
             </button>
 
-            <div id="modal-slider" class="w-full flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-2 items-center h-[60vh] md:h-[75vh]">
+            <div id="modal-slider" class="w-full flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-2 items-center h-[60vh] md:h-[70vh]">
                 </div>
 
             <button id="next-slide" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white/50 hover:text-white bg-zinc-900/50 hover:bg-zinc-900 p-3 rounded-full backdrop-blur-sm transition-all hidden md:block">
@@ -256,7 +262,7 @@
             </button>
         </div>
         
-        <div class="text-center text-zinc-500 text-xs tracking-widest uppercase mt-6">
+        <div class="text-center text-zinc-500 text-[10px] tracking-[0.2em] uppercase mt-6">
             <span id="slide-counter">1 / 1</span>
         </div>
     </div>
