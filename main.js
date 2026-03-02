@@ -1,11 +1,9 @@
-// O Grid foi calculado para formar um bloco perfeito de 4 colunas e 4 linhas.
 const projects = [
     {
         id: 1,
         title: "Loja De bem Com a Vida",
         category: "Comercial",
-        bentoClass: "md:col-span-2 md:row-span-1",
-        coverImage: "assets/projetos/loja-de-bem-com-a-vida/01_resultado.webp", // Capa escolhida
+        coverImage: "assets/projetos/loja-de-bem-com-a-vida/01_resultado.webp", 
         images: [
             "assets/projetos/loja-de-bem-com-a-vida/01_resultado.webp", 
             "assets/projetos/loja-de-bem-com-a-vida/02_resultado.webp",
@@ -23,10 +21,7 @@ const projects = [
         id: 2,
         title: "Malu & Marcelo",
         category: "Interiores",
-        bentoClass: "md:col-span-1 md:row-span-2",
-        // Define a capa independente da ordem do modal
         coverImage: "assets/projetos/malu-e-marcelo/sala-de-estar-e-jantar/05_resultado.webp", 
-        // A ORDEM AQUI IMPORTA: O carrossel vai seguir essa ordem
         images: {
             "Hall": [
                 "assets/projetos/malu-e-marcelo/hall/01_resultado.webp",
@@ -73,10 +68,9 @@ const projects = [
     },
     {
         id: 3,
-        title: "Cozinha",
+        title: "Cozinha Gourmet",
         category: "Interiores",
-        bentoClass: "md:col-span-1 md:row-span-2", 
-        coverImage: "assets/projetos/cozinha-gourmet/01_resultado.webp", // Capa escolhida
+        coverImage: "assets/projetos/cozinha-gourmet/01_resultado.webp", 
         images: [
             "assets/projetos/cozinha-gourmet/01_resultado.webp",
             "assets/projetos/cozinha-gourmet/02_resultado.webp",
@@ -90,8 +84,7 @@ const projects = [
         id: 4,
         title: "Quarto Casal",
         category: "Interiores",
-        bentoClass: "md:col-span-2 md:row-span-1", 
-        coverImage: "assets/projetos/quarto-ana-maria/01_resultado.webp", // Capa escolhida
+        coverImage: "assets/projetos/quarto-ana-maria/01_resultado.webp", 
         images: [
             "assets/projetos/quarto-ana-maria/01_resultado.webp",
             "assets/projetos/quarto-ana-maria/02_resultado.webp",
@@ -105,8 +98,7 @@ const projects = [
         id: 5,
         title: "Varanda Gourmet",
         category: "Residencial",
-        bentoClass: "md:col-span-1 md:row-span-2", 
-        coverImage: "assets/projetos/varanda-ingrid-e-kadu/01_resultado.webp", // Capa escolhida
+        coverImage: "assets/projetos/varanda-ingrid-e-kadu/01_resultado.webp", 
         images: [
             "assets/projetos/varanda-ingrid-e-kadu/01_resultado.webp",
             "assets/projetos/varanda-ingrid-e-kadu/02_resultado.webp",
@@ -118,8 +110,7 @@ const projects = [
         id: 6,
         title: "Escritório Industrial",
         category: "Comercial",
-        bentoClass: "md:col-span-2 md:row-span-1", 
-        coverImage: "assets/projetos/escritorio-industrial/01_resultado.webp", // Capa escolhida
+        coverImage: "assets/projetos/escritorio-industrial/01_resultado.webp", 
         images: [
             "assets/projetos/escritorio-industrial/01_resultado.webp",
             "assets/projetos/escritorio-industrial/02_resultado.webp",
@@ -134,8 +125,7 @@ const projects = [
         id: 7,
         title: "Quarto Infantil",
         category: "Residencial",
-        bentoClass: "md:col-span-1 md:row-span-2", 
-        coverImage: "assets/projetos/quarto-pedro/01_resultado.webp", // Capa escolhida
+        coverImage: "assets/projetos/quarto-pedro/01_resultado.webp", 
         images: [
             "assets/projetos/quarto-pedro/01_resultado.webp",
             "assets/projetos/quarto-pedro/02_resultado.webp",
@@ -152,8 +142,7 @@ const projects = [
         id: 8,
         title: "Mari & Jd",
         category: "Residencial",
-        bentoClass: "md:col-span-2 md:row-span-1", 
-        coverImage: "assets/projetos/mari-e-jd/cozinha/02_resultado.webp", // Capa escolhida
+        coverImage: "assets/projetos/mari-e-jd/cozinha/02_resultado.webp", 
         images: {
             "Sala": [
                 "assets/projetos/mari-e-jd/sala/01_resultado.webp",
@@ -188,18 +177,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.getElementById('close-modal');
     const prevBtn = document.getElementById('prev-slide');
     const nextBtn = document.getElementById('next-slide');
-    const filterButtons = document.querySelectorAll('.filter-btn'); // Botões de filtro
+    const filterButtons = document.querySelectorAll('.filter-btn');
 
-    // Variáveis globais para controlar o modal aberto
-    let flatImages = []; // Array unificado de todas as imagens do projeto aberto
+    let flatImages = []; 
     let currentSlideIndex = 0;
 
-    // --- 1. Lógica de Filtro e Renderização de Cards ---
     function renderProjects(filter = 'todos') {
-        // Limpa o grid atual
         gridContainer.innerHTML = '';
 
-        // Filtra o array baseado na categoria escolhida
         const filteredProjects = filter === 'todos' 
             ? projects 
             : projects.filter(p => p.category.toLowerCase() === filter.toLowerCase());
@@ -215,9 +200,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 coverImg = proj.images[firstCategory][0];
             }
             
-            // Adicionado a classe animate-fadeIn para dar efeito na troca
+            // Aqui as alturas foram travadas com Tailwind: h-[350px] no mobile e h-[400px] no desktop
             const articleHTML = `
-                <article class="group relative overflow-hidden cursor-pointer w-full h-full bg-zinc-100 animate-fadeIn ${proj.bentoClass}" onclick="openModal(${proj.id})">
+                <article class="group relative overflow-hidden cursor-pointer w-full h-[350px] md:h-[400px] bg-zinc-100 animate-fadeIn" onclick="openModal(${proj.id})">
                     <div class="absolute inset-0 overflow-hidden">
                         <img src="${coverImg}" 
                              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -226,8 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     
                     <div class="absolute inset-0 z-20 bg-gradient-to-t from-zinc-900/90 via-zinc-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 md:p-8 pointer-events-none">
-                        <span class="text-zinc-300 text-xs tracking-widest uppercase mb-2">${proj.category}</span>
-                        <h3 class="text-white text-2xl md:text-3xl font-serif">${proj.title}</h3>
+                        <span class="text-zinc-300 text-[10px] tracking-[0.2em] uppercase mb-2">${proj.category}</span>
+                        <h3 class="text-white text-lg md:text-xl font-sans font-light uppercase tracking-[0.15em]">${proj.title}</h3>
                     </div>
                 </article>
             `;
@@ -235,33 +220,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Inicializa carregando todos os projetos
     renderProjects();
 
-    // Eventos de clique nos botões de Filtro
     if (filterButtons.length > 0) {
         filterButtons.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Remove a cor escura e a borda ativa de todos
                 filterButtons.forEach(b => {
                     b.classList.remove('border-zinc-900', 'text-zinc-900');
                     b.classList.add('text-zinc-400', 'border-transparent');
                 });
 
-                // Coloca a cor ativa apenas no clicado
                 btn.classList.remove('text-zinc-400', 'border-transparent');
                 btn.classList.add('border-zinc-900', 'text-zinc-900');
 
-                // Puxa a string (ex: 'Residencial') e refaz o grid
                 const filterValue = btn.getAttribute('data-filter');
                 renderProjects(filterValue);
             });
         });
     }
 
-    // --- 2. Lógica do Modal ---
     function updateUI() {
-        if (!flatImages[currentSlideIndex]) return; // Proteção contra quebra
+        if (!flatImages[currentSlideIndex]) return; 
         
         slideCounter.innerText = `${currentSlideIndex + 1} / ${flatImages.length}`;
 
@@ -274,9 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentItem && currentItem.categoryName && modalTabs.children.length > 0) {
             Array.from(modalTabs.children).forEach(btn => {
                 if (btn.innerText === currentItem.categoryName) {
-                    btn.className = 'text-sm uppercase tracking-widest pb-1 border-b-2 border-white text-white transition-colors';
+                    btn.className = 'text-[10px] md:text-xs uppercase tracking-[0.2em] pb-1 border-b-2 border-white text-white transition-colors';
                 } else {
-                    btn.className = 'text-sm uppercase tracking-widest pb-1 border-b-2 border-transparent text-zinc-500 hover:text-zinc-300 transition-colors';
+                    btn.className = 'text-[10px] md:text-xs uppercase tracking-[0.2em] pb-1 border-b-2 border-transparent text-zinc-500 hover:text-zinc-300 transition-colors';
                 }
             });
         }
@@ -303,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
             categories.forEach((cat, index) => {
                 const btn = document.createElement('button');
                 btn.innerText = cat;
-                btn.className = `text-sm uppercase tracking-widest pb-1 border-b-2 transition-colors ${index === 0 ? 'border-white text-white' : 'border-transparent text-zinc-500 hover:text-zinc-300'}`;
+                btn.className = `text-[10px] md:text-xs uppercase tracking-[0.2em] pb-1 border-b-2 transition-colors ${index === 0 ? 'border-white text-white' : 'border-transparent text-zinc-500 hover:text-zinc-300'}`;
                 
                 btn.onclick = () => {
                     const targetIndex = flatImages.findIndex(img => img.categoryName === cat);
@@ -319,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         modalSlider.innerHTML = flatImages.map(img => `
-            <div class="snap-center shrink-0 w-full h-full flex items-center justify-center p-2">
+            <div class="snap-center shrink-0 w-full h-full flex items-center justify-center p-2 md:p-6">
                 <img src="${img.url}" class="max-w-full max-h-full object-contain rounded-sm shadow-2xl">
             </div>
         `).join('');
@@ -330,7 +309,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden';
     };
 
-    // Botões do Modal
     prevBtn.onclick = () => {
         if (currentSlideIndex > 0) {
             currentSlideIndex--;
@@ -345,7 +323,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Scroll manual no celular
     modalSlider.addEventListener('scroll', () => {
         clearTimeout(modalSlider.scrollTimeout);
         modalSlider.scrollTimeout = setTimeout(() => {
@@ -381,7 +358,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowRight') nextBtn.click();
     });
 
-    // --- 3. Slideshow do Perfil (Seção Sobre) ---
     const profileSlideshow = document.querySelector('.profile-slideshow-container');
     if (profileSlideshow) {
         const profileSlides = profileSlideshow.querySelectorAll('.profile-slide');
@@ -397,19 +373,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- 4. Menu Mobile ---
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileNav = document.getElementById('mobile-nav');
     const mobileLinks = document.querySelectorAll('.mobile-link');
 
     if (mobileMenuBtn && mobileNav) {
-        // Ao clicar no hambúrguer, mostra ou esconde o menu
         mobileMenuBtn.onclick = () => {
             mobileNav.classList.toggle('hidden');
             mobileNav.classList.toggle('flex');
         };
 
-        // Ao clicar em qualquer link (ex: Projetos, Sobre), fecha o menu e vai pra seção
         mobileLinks.forEach(link => {
             link.onclick = () => {
                 mobileNav.classList.add('hidden');

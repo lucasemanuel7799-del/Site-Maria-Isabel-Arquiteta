@@ -40,8 +40,8 @@
             </a>
             
             <nav class="hidden md:flex gap-10 text-sm uppercase tracking-[0.15em] text-zinc-600 font-light hover:text-zinc-900">
-                <a href="#home" class="hover:text-zinc-900 transition-colors">Home</a>
                 <a href="#projetos" class="hover:text-zinc-900 transition-colors">Projetos</a>
+                <a href="#sobre" class="hover:text-zinc-900 transition-colors">Sobre</a>
                 <a href="#contato" class="hover:text-zinc-900 transition-colors">Contato</a>
             </nav>
             
@@ -53,14 +53,45 @@
         </div>
 
         <nav id="mobile-nav" class="hidden fixed inset-0 bg-zinc-50 z-50 flex-col items-center justify-center gap-8 text-lg uppercase tracking-[0.15em] text-zinc-600 font-light">
-            <a href="#home" class="mobile-link hover:text-zinc-900 transition-colors">Home</a>
             <a href="#projetos" class="mobile-link hover:text-zinc-900 transition-colors">Projetos</a>
+            <a href="#sobre" class="mobile-link hover:text-zinc-900 transition-colors">Sobre</a>
             <a href="#contato" class="mobile-link hover:text-zinc-900 transition-colors">Contato</a>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="relative w-full bg-transparent">
+        <section id="projetos" class="pt-32 md:pt-40 pb-12 bg-zinc-50 min-h-screen">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="mb-16 text-center">
+                    <span class="text-zinc-400 uppercase tracking-[0.2em] text-xs font-light mb-4 block">Portfólio</span>
+                    <h1 class="text-3xl md:text-4xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-tight mb-10">
+                        Projetos Selecionados
+                    </h1>
+
+                    <div id="project-filters" class="flex flex-wrap justify-center gap-4 md:gap-8 text-xs uppercase tracking-widest font-light">
+                        <button class="filter-btn active border-b border-zinc-900 text-zinc-900 pb-1 transition-all" data-filter="todos">Todos</button>
+                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Residencial">Residencial</button>
+                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Interiores">Interiores</button>
+                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Comercial">Comercial</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full" id="portfolio-grid">
+                    </div>
+
+                <div class="mt-20 text-center bg-transparent py-12 border-t border-zinc-200">
+                    <h3 class="text-xl md:text-2xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 mb-4">Pronto para transformar seu espaço?</h3>
+                    <p class="text-zinc-500 font-light tracking-wide mb-8 max-w-xl mx-auto text-sm">Vamos conversar sobre as suas ideias e entender como podemos criar um projeto único para você.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="inline-block px-10 py-4 border border-zinc-900 text-zinc-900 font-light uppercase tracking-[0.15em] text-xs hover:bg-zinc-900 hover:text-white transition-colors">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="sobre" class="relative w-full bg-transparent">
             
             <div class="hidden md:flex relative h-screen items-center justify-end overflow-hidden px-12 lg:px-24">
                 <div class="absolute inset-0 z-0">
@@ -70,9 +101,9 @@
                 </div>
 
                 <div class="relative z-10 max-w-xl w-full flex flex-col justify-center items-start text-left mt-20">
-                    <h1 class="text-3xl lg:text-4xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-[1.4] mb-8">
+                    <h2 class="text-3xl lg:text-4xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-[1.4] mb-8">
                         Arquitetura que traduz identidade e permanece no tempo
-                    </h1>
+                    </h2>
                     
                     <p class="text-sm lg:text-base font-sans font-light uppercase tracking-widest text-zinc-900 leading-[1.8] mb-6">
                         Formada em Arquitetura pela Universidade de Fortaleza, Maria Isabel construiu uma trajetória marcada por sensibilidade estética e precisão técnica.
@@ -91,15 +122,15 @@
             <div class="block md:hidden relative w-full overflow-hidden bg-[#e8e8e3]" style="height: 100svh;">
                 <img src="assets/svg/hero_mobile.svg" class="absolute inset-0 w-full h-full object-cover object-bottom z-0" alt="Maria Isabel Arquiteta">
                 
-                <div class="absolute top-0 left-0 w-full z-10 flex flex-col items-center px-6" style="padding-top: 96px;">
-                    <div class="w-full max-w-[400px]">
-                        <h1 class="font-sans font-normal uppercase text-zinc-900" style="font-size: clamp(14px, 5vw, 22px); line-height: 1.4; margin-bottom: clamp(12px, 4vw, 24px); letter-spacing: 0.12em;">
+                <div class="absolute top-[80px] left-0 w-full z-10 flex flex-col items-center px-6 pt-4">
+                    <div class="w-full max-w-[360px]">
+                        <h2 class="font-sans font-normal uppercase text-zinc-900" style="font-size: clamp(12px, 3.5vw, 15px); line-height: 1.35; margin-bottom: 12px; letter-spacing: 0.12em;">
                             Arquitetura que traduz identidade e permanece no tempo
-                        </h1>
-                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(10px, 3.5vw, 15px); line-height: 1.6; margin-bottom: clamp(10px, 3.5vw, 16px); letter-spacing: 0.1em;">
+                        </h2>
+                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(9px, 2.5vw, 11px); line-height: 1.5; margin-bottom: 10px; letter-spacing: 0.1em;">
                             Formada em Arquitetura pela Universidade de Fortaleza, Maria Isabel construiu uma trajetória marcada por sensibilidade estética e precisão técnica.
                         </p>
-                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(10px, 3.5vw, 15px); line-height: 1.6; letter-spacing: 0.1em;">
+                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(9px, 2.5vw, 11px); line-height: 1.5; letter-spacing: 0.1em;">
                             Com olhar apurado e abordagem contemporânea, desenvolve projetos residenciais, comerciais e corporativos que traduzem sofisticação, identidade e intenção.
                         </p>
                     </div>
@@ -130,12 +161,12 @@
             <div class="block md:hidden relative w-full overflow-hidden bg-[#e8e8e3]" style="height: 100svh;">
                 <img src="assets/svg/sub_hero.svg" class="absolute inset-0 w-full h-full object-cover object-bottom z-0" alt="Maria Isabel Arquiteta">
                 
-                <div class="absolute top-0 left-0 w-full z-10 flex flex-col items-center px-6" style="padding-top: 96px;">
-                    <div class="w-full max-w-[400px]">
-                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(11px, 4vw, 16px); line-height: 1.7; margin-bottom: clamp(14px, 4vw, 24px); letter-spacing: 0.12em;">
+                <div class="absolute top-[80px] left-0 w-full z-10 flex flex-col items-center px-6 pt-4">
+                    <div class="w-full max-w-[360px]">
+                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(10px, 3vw, 12px); line-height: 1.6; margin-bottom: 14px; letter-spacing: 0.12em;">
                             À frente de seu escritório, conduz cada criação com equilíbrio entre forma e função, transformando espaços em experiências.
                         </p>
-                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(11px, 4vw, 16px); line-height: 1.7; letter-spacing: 0.12em;">
+                        <p class="font-sans font-light uppercase text-zinc-900" style="font-size: clamp(10px, 3vw, 12px); line-height: 1.6; letter-spacing: 0.12em;">
                             Para Maria Isabel, arquitetura é expressão, estratégia e permanência — é a arte de criar ambientes que elevam a maneira de viver.
                         </p>
                     </div>
@@ -144,36 +175,6 @@
 
         </section>
 
-        <section id="projetos" class="pt-24 pb-12 bg-zinc-50">
-            <div class="max-w-7xl mx-auto px-6">
-                
-                <div class="mb-16 text-center">
-                    <span class="text-zinc-400 uppercase tracking-[0.2em] text-xs font-light mb-4 block">Portfólio</span>
-                    <h2 class="text-3xl md:text-4xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 leading-tight mb-10">
-                        Projetos Selecionados
-                    </h2>
-
-                    <div id="project-filters" class="flex flex-wrap justify-center gap-4 md:gap-8 text-xs uppercase tracking-widest font-light">
-                        <button class="filter-btn active border-b border-zinc-900 text-zinc-900 pb-1 transition-all" data-filter="todos">Todos</button>
-                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Residencial">Residencial</button>
-                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Interiores">Interiores</button>
-                        <button class="filter-btn text-zinc-400 hover:text-zinc-900 pb-1 border-b border-transparent transition-all" data-filter="Comercial">Comercial</button>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-4 auto-rows-[300px] md:auto-rows-[280px] gap-3 w-full" id="portfolio-grid">
-                    </div>
-
-                <div class="mt-20 text-center bg-transparent py-12 border-t border-zinc-200">
-                    <h3 class="text-xl md:text-2xl font-sans font-light uppercase tracking-[0.15em] text-zinc-900 mb-4">Pronto para transformar seu espaço?</h3>
-                    <p class="text-zinc-500 font-light tracking-wide mb-8 max-w-xl mx-auto text-sm">Vamos conversar sobre as suas ideias e entender como podemos criar um projeto único para você.</p>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="inline-block px-10 py-4 border border-zinc-900 text-zinc-900 font-light uppercase tracking-[0.15em] text-xs hover:bg-zinc-900 hover:text-white transition-colors">
-                        Solicitar Orçamento
-                    </a>
-                </div>
-
-            </div>
-        </section>
     </main>
 
     <footer id="contato" class="bg-zinc-950 text-zinc-400 py-20">
