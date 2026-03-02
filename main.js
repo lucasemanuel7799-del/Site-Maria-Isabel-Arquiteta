@@ -167,7 +167,7 @@ const projects = [
     },
     {
         id: 7,
-        title: "",
+        title: "Quarto Infantil",
         category: "Residencial",
         coverImage: "assets/projetos/quarto-pedro/01_resultado.webp", 
         images: [
@@ -233,8 +233,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 coverImg = proj.images[firstCategory][0];
             }
             
+            // ATUALIZADO: w-[100vw] para o mobile ficar 1 por vez e centralizado, com classes avançadas de snap (snap-center snap-always)
             const articleHTML = `
-                <article class="snap-start shrink-0 w-[85vw] md:w-[calc(33.333%-16px)] h-full group relative overflow-hidden cursor-pointer bg-zinc-100 animate-fadeIn" onclick="openModal(${proj.id})">
+                <article class="snap-center snap-always shrink-0 w-[100vw] md:w-[calc(33.333%-16px)] h-full group relative overflow-hidden cursor-pointer bg-zinc-100 animate-fadeIn" onclick="openModal(${proj.id})">
                     <div class="absolute inset-0 overflow-hidden">
                         <img src="${coverImg}" 
                              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
