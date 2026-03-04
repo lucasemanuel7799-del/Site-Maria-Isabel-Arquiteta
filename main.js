@@ -2,7 +2,7 @@ const projects = [
     {
         id: 2,
         title: "Residencial LM",
-        category: "Interiores",
+        category: "Residencial",
         coverImage: "assets/projetos/residencial-lm/sala-de-estar-e-jantar/01_resultado.webp", 
         images: {
             "Hall": [
@@ -51,7 +51,7 @@ const projects = [
     {
         id: 3,
         title: "Residencial MJ",
-        category: "Interiores",
+        category: "Residencial",
         coverImage: "assets/projetos/residencial-mj/sala/03_resultado.webp", 
         images: {
             "Sala": [
@@ -130,7 +130,7 @@ const projects = [
     {
         id: 4,
         title: "Suite Sonhador",
-        category: "Interiores",
+        category: "Residencial",
         coverImage: "assets/projetos/suite-sonhador/07_resultado.webp", 
         images: [
             "assets/projetos/suite-sonhador/01_resultado.webp",
@@ -211,6 +211,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById('next-slide');
     const filterButtons = document.querySelectorAll('.filter-btn');
 
+    // Botões flutuantes da galeria principal
+    const prevProjectBtn = document.getElementById('prev-project');
+    const nextProjectBtn = document.getElementById('next-project');
+
     let flatImages = []; 
     let currentSlideIndex = 0;
 
@@ -254,6 +258,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderProjects();
+
+    // Logica de navegação pelas setas da galeria principal
+    if (prevProjectBtn && nextProjectBtn) {
+        prevProjectBtn.addEventListener('click', () => {
+            const cardWidth = gridContainer.querySelector('article')?.clientWidth || 0;
+            // Desconta a largura de um card + o gap de 1rem (16px)
+            gridContainer.scrollBy({ left: -(cardWidth + 16), behavior: 'smooth' });
+        });
+
+        nextProjectBtn.addEventListener('click', () => {
+            const cardWidth = gridContainer.querySelector('article')?.clientWidth || 0;
+            gridContainer.scrollBy({ left: (cardWidth + 16), behavior: 'smooth' });
+        });
+    }
 
     if (filterButtons.length > 0) {
         filterButtons.forEach(btn => {
