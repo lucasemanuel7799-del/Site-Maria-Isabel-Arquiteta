@@ -1,23 +1,5 @@
 const projects = [
     {
-        id: 1,
-        title: "Residencial MM",
-        category: "Residencial",
-        coverImage: "assets/projetos/residencial-mm/08_resultado.webp", 
-        images: [
-            "assets/projetos/residencial-mm/01_resultado.webp", 
-            "assets/projetos/residencial-mm/02_resultado.webp",
-            "assets/projetos/residencial-mm/03_resultado.webp",
-            "assets/projetos/residencial-mm/04_resultado.webp",
-            "assets/projetos/residencial-mm/05_resultado.webp",
-            "assets/projetos/residencial-mm/06_resultado.webp",
-            "assets/projetos/residencial-mm/07_resultado.webp",
-            "assets/projetos/residencial-mm/08_resultado.webp",
-            "assets/projetos/residencial-mm/09_resultado.webp",
-            "assets/projetos/residencial-mm/10_resultado.webp"
-        ]
-    },
-    {
         id: 2,
         title: "Residencial LM",
         category: "Interiores",
@@ -114,6 +96,38 @@ const projects = [
         }
     },
     {
+        id: 5,
+        title: "Residencial JN",
+        category: "Residencial",
+        coverImage: "assets/projetos/residencial-jn/01_resultado.webp", 
+        images: [
+            "assets/projetos/residencial-jn/01_resultado.webp",
+            "assets/projetos/residencial-jn/02_resultado.webp",
+            "assets/projetos/residencial-jn/03_resultado.webp",
+            "assets/projetos/residencial-jn/04_resultado.webp",
+            "assets/projetos/residencial-jn/05_resultado.webp",
+            "assets/projetos/residencial-jn/06_resultado.webp",
+        ]
+    },
+    {
+        id: 1,
+        title: "Residencial MM",
+        category: "Residencial",
+        coverImage: "assets/projetos/residencial-mm/08_resultado.webp", 
+        images: [
+            "assets/projetos/residencial-mm/01_resultado.webp", 
+            "assets/projetos/residencial-mm/02_resultado.webp",
+            "assets/projetos/residencial-mm/03_resultado.webp",
+            "assets/projetos/residencial-mm/04_resultado.webp",
+            "assets/projetos/residencial-mm/05_resultado.webp",
+            "assets/projetos/residencial-mm/06_resultado.webp",
+            "assets/projetos/residencial-mm/07_resultado.webp",
+            "assets/projetos/residencial-mm/08_resultado.webp",
+            "assets/projetos/residencial-mm/09_resultado.webp",
+            "assets/projetos/residencial-mm/10_resultado.webp"
+        ]
+    },
+    {
         id: 4,
         title: "Suite Sonhador",
         category: "Interiores",
@@ -131,17 +145,18 @@ const projects = [
         ]
     },
     {
-        id: 5,
-        title: "Residencial JN",
-        category: "Residencial",
-        coverImage: "assets/projetos/residencial-jn/01_resultado.webp", 
+        id: 8,
+        title: "Office Trans FX",
+        category: "Comercial",
+        coverImage: "assets/projetos/office-trans-fx/01_resultado.webp", 
         images: [
-            "assets/projetos/residencial-jn/01_resultado.webp",
-            "assets/projetos/residencial-jn/02_resultado.webp",
-            "assets/projetos/residencial-jn/03_resultado.webp",
-            "assets/projetos/residencial-jn/04_resultado.webp",
-            "assets/projetos/residencial-jn/05_resultado.webp",
-            "assets/projetos/residencial-jn/06_resultado.webp",
+            "assets/projetos/office-trans-fx/01_resultado.webp",
+            "assets/projetos/office-trans-fx/02_resultado.webp",
+            "assets/projetos/office-trans-fx/03_resultado.webp",
+            "assets/projetos/office-trans-fx/04_resultado.webp",
+            "assets/projetos/office-trans-fx/05_resultado.webp",
+            "assets/projetos/office-trans-fx/06_resultado.webp",
+            "assets/projetos/office-trans-fx/07_resultado.webp"
         ]
     },
     {
@@ -166,35 +181,19 @@ const projects = [
         ]
     },
     {
-        id: 7,
-        title: "Quarto Infantil",
-        category: "Residencial",
-        coverImage: "assets/projetos/quarto-pedro/01_resultado.webp", 
-        images: [
-            "assets/projetos/quarto-pedro/01_resultado.webp",
-            "assets/projetos/quarto-pedro/02_resultado.webp",
-            "assets/projetos/quarto-pedro/03_resultado.webp",
-            "assets/projetos/quarto-pedro/04_resultado.webp",
-            "assets/projetos/quarto-pedro/05_resultado.webp",
-            "assets/projetos/quarto-pedro/06_resultado.webp",
-            "assets/projetos/quarto-pedro/07_resultado.webp",
-            "assets/projetos/quarto-pedro/08_resultado.webp",
-            "assets/projetos/quarto-pedro/09_resultado.webp",
-        ]
-    },
-    {
-        id: 8,
-        title: "Office Trans FX",
+        id: 9,
+        title: "Office PGM",
         category: "Comercial",
-        coverImage: "assets/projetos/office-trans-fx/01_resultado.webp", 
+        coverImage: "assets/projetos/office-pgm/01.jpg", 
         images: [
-            "assets/projetos/office-trans-fx/01_resultado.webp",
-            "assets/projetos/office-trans-fx/02_resultado.webp",
-            "assets/projetos/office-trans-fx/03_resultado.webp",
-            "assets/projetos/office-trans-fx/04_resultado.webp",
-            "assets/projetos/office-trans-fx/05_resultado.webp",
-            "assets/projetos/office-trans-fx/06_resultado.webp",
-            "assets/projetos/office-trans-fx/07_resultado.webp"
+            "assets/projetos/office-pgm/01.jpg",
+            "assets/projetos/office-pgm/02.jpg",
+            "assets/projetos/office-pgm/03.png",
+            "assets/projetos/office-pgm/04.jpg",
+            "assets/projetos/office-pgm/05.png",
+            "assets/projetos/office-pgm/06.jpg",
+            "assets/projetos/office-pgm/07.jpg",
+            "assets/projetos/office-pgm/08.jpg",
         ]
     }
 ];
@@ -233,17 +232,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 coverImg = proj.images[firstCategory][0];
             }
             
-            // ATUALIZADO: w-[100vw] para o mobile ficar 1 por vez e centralizado, com classes avançadas de snap (snap-center snap-always)
             const articleHTML = `
-                <article class="snap-center snap-always shrink-0 w-[100vw] md:w-[calc(33.333%-16px)] h-full group relative overflow-hidden cursor-pointer bg-zinc-100 animate-fadeIn" onclick="openModal(${proj.id})">
+                <article class="snap-center snap-always shrink-0 w-screen md:w-[calc(33.333%-16px)] h-full group relative overflow-hidden cursor-pointer bg-zinc-100 animate-fadeIn" onclick="openModal(${proj.id})">
                     <div class="absolute inset-0 overflow-hidden">
                         <img src="${coverImg}" 
                              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                             alt="${proj.title} capa">
+                             alt="${proj.title} capa"
+                             loading="lazy"
+                             decoding="async">
                         <div class="absolute inset-0 bg-zinc-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                     </div>
                     
-                    <div class="absolute inset-0 z-20 bg-gradient-to-t from-zinc-900/90 via-zinc-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 md:p-8 pointer-events-none">
+                    <div class="absolute inset-0 z-20 bg-linear-to-t from-zinc-900/90 via-zinc-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 md:p-8 pointer-events-none">
                         <span class="text-zinc-300 text-[10px] tracking-[0.2em] uppercase mb-2">${proj.category}</span>
                         <h3 class="text-white text-lg md:text-xl font-sans font-light uppercase tracking-[0.15em]">${proj.title}</h3>
                     </div>
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         modalSlider.innerHTML = flatImages.map(img => `
             <div class="snap-center shrink-0 w-full h-full flex items-center justify-center p-2 md:p-6">
-                <img src="${img.url}" class="max-w-full max-h-full object-contain rounded-sm shadow-2xl">
+                <img src="${img.url}" class="max-w-full max-h-full object-contain rounded-sm shadow-2xl" loading="lazy" decoding="async">
             </div>
         `).join('');
 
